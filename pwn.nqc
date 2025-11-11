@@ -1,0 +1,64 @@
+task main {
+
+task sensorz {
+SetSensor(SENSOR_1, SENSOR_TOUCH);
+SetSensor(SENSOR_2, SENSOR_TOUCH);
+SetSensor(SENSOR_3, SENSOR_TOUCH);
+SetSensor(SENSOR_4, SENSOR_TOUCH);
+a = SensorValue(0);
+b = SensorValue(0);
+c = SensorValue(0);
+d = SensorValue(0);
+  // SENSOR CONFIGURATION TO TAKE PLACE HERE
+   }
+  
+  
+task motorz {
+SetOutput(OUT_A + OUT_B, OUT_ON);
+SetPower(OUT_A, 6); 
+SetPower(OUT_B, 6);
+  if (input == 'fwd') { 
+    onFpwd(OUT_A + OUT_B);
+   }
+  else if (input == 'back') { 
+    onRev(OUT_A + OUT_B);
+   }
+  else if (input == 'stop') { 
+    Off(OUT_A + OUT_B);
+   }
+   else if (input == 'pause') { 
+   wair(1000);
+   }
+  else {
+    printf("No user input provided");
+	// PROMPT USER FOR INPUT HERE
+  }
+
+
+task networkPwn {
+ // VARIOUS NETWORK-BASED ATTACKS TO GO HERE
+  if (input == 'mitm') {
+    // LAUNCH MITM ATTACK
+  } 
+  else if (input == 'rogue') {
+    // LAUNCH ROGUE ROUTER ATTACKS
+  } 
+   else if (input == 'dpi') {
+    // LAUNCH DEEP PACKET INSPECTION
+  }  
+   else if (input == 'rfid') {
+    // LAUNCH RF-BASED ATTACKS
+  } 
+   else if (input == 'bluetooth') {
+    // LAUNCH BLUETOOTH-BASED ATTACKS
+  } 
+   else if (input == 'crack') {
+    // LAUNCH WIFI CRACKING ATTACKS
+  } 
+   else {
+     printf("No input selectd");
+	// PROMPT USER FOR INPUT HERE
+   }
+ }  
+
+}
