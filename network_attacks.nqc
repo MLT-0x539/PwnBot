@@ -1,0 +1,4 @@
+task main {
+// CODE FOR NETWORK-BSAED ATTACKS TO GO HERE.
+// CALLED VIA "networkPwn" FUNCTION in "pwn.nqc".
+}
