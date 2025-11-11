@@ -1,3 +1,10 @@
+#NQC_INCLUDE 'network_attacks.nqc'
+#NQC_INCLUDE 'bot_conf.nqc'
+#NQC_INCLUDE 'loader.nqc'
+#DEFINE 'os-win'
+#DEFINE 'os-mac'
+#DEFINE 'os_nix'
+
 task main {
 
 task sensorz {
