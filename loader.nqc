@@ -1,0 +1,11 @@
+task main {
+
+  if (input == 'vex') {
+  // CODE FOR VEX LOADER
+  }
+
+  e;se if (input == 'mindstorm') {
+  // CODE FOR LEGO MINDTORM LOADER
+  }  
+  
+}
