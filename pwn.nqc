@@ -27,7 +27,7 @@ SetPower(OUT_B, 6);
     Off(OUT_A + OUT_B);
    }
    else if (input == 'pause') { 
-   wair(1000);
+   wait(1000);
    }
   else {
     printf("No user input provided");
